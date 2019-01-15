@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.exercise.MainActivity">
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/butClick"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:textColor="@color/colorAccent"
+        android:text="点我添加数据"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"/>
+    <Button
+        android:id="@+id/butDelete"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:textColor="@color/colorAccent"
+        android:text="点我删除数据"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
